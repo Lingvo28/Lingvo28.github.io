@@ -1,0 +1,89 @@
+@import "_variables1";
+
+@mixin link($color, $size:16px, $weight:700, $font: rb, $up:up, $mg:50px){
+	color: $color;
+	text-decoration: none;
+	font-family: map-get($fonts,os), sans-serif;
+	@if($up==down){
+		opacity: 1;
+	}
+	@else{
+		opacity: 0.85;
+	}
+	font-family: map-get($fonts,$font), sans-serif;
+	margin-left: $mg;
+	font-size: $size;
+	font-weight: $weight;
+	text-transform: uppercase;
+	transition: opacity .15s linear;
+	&:first-child {
+		margin-left: 0px;
+	}
+	&:hover {
+		@if($up==down){
+			opacity: 0.85;
+		}
+		@else{
+			opacity: 1;
+		}
+	}
+}
+
+
+
+
+@mixin btn($c:$white, $bg:$grey-purple, $c_h:$dark-purple, $bg_h:darken($white,  10)){
+
+	display: inline-block;
+	vertical-align: top;
+	padding: 16px 44px;
+	margin-bottom: 20px;
+	border-radius: 15px;
+	border: 0;
+	cursor: pointer;
+	font-family: map-get($fonts,os), sans-serif;
+	font-size: 14px;
+	color: $c;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: background 0.15s linear;
+	background: $bg;
+	&:hover {
+		background-color: $bg_h;
+		border: 1px solid $darkest-purple;
+		color:$c_h;
+		padding: 15px 43px;
+		font-weight: 700;
+		cursor: url("../images/cursor.png") 5 5, auto;
+	}
+}
+
+
+
+
+@mixin social__icon($c: $middle-grey, $h:18px){
+	display: block;
+	height: $h;
+	fill: $c;
+	transition: fill .1s linear;
+}
+
+@mixin social__item($bg:$white, $bg_h:$light-grey, $b_c:$light-grey, $fill:$violet, $w:40px, $h:40px){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 4px;
+	width: $w;
+	height: $h;
+	border: 1px solid $b_c;
+	background-color: $bg;
+	transition: background .1s linear;
+	&:hover {
+		background-color: $bg_h;
+		border: 1px solid $fill;
+		.social__icon {
+			fill: $fill;
+		}
+	}
+}

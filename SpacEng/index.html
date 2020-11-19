@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/_main.css">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Cardo:400i|Open+Sans:400,700|Raleway:400,600,700&display=swap" rel="stylesheet">
+	<title>SpacEng</title>
+</head>
+
+<body>
+<script defer src="assets/js/script.js"></script>
+<!--  SPRITE -->
+<svg style="display:none;">
+	
+	<symbol id="facebook" viewBox="0 0 430.113 430.114">
+		<g>
+		    <path d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805
+		        c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354
+		        c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z"/>
+		</g>
+	</symbol>
+
+	<symbol id="instagram" viewBox="0 0 512 512">
+		<g>
+		    <path d="M363.273,0H148.728C66.719,0,0,66.719,0,148.728v214.544C0,445.281,66.719,512,148.728,512h214.544
+			C445.281,512,512,445.281,512,363.273V148.728C512,66.719,445.281,0,363.273,0z M472,363.272C472,423.225,423.225,472,363.273,472
+			H148.728C88.775,472,40,423.225,40,363.273V148.728C40,88.775,88.775,40,148.728,40h214.544C423.225,40,472,88.775,472,148.728
+			V363.272z"/>
+		</g>
+		<g>
+		<path d="M256,118c-76.094,0-138,61.906-138,138s61.906,138,138,138s138-61.906,138-138S332.094,118,256,118z M256,354
+			c-54.037,0-98-43.963-98-98s43.963-98,98-98s98,43.963,98,98S310.037,354,256,354z"/>
+		</g>
+		<g>
+		<circle cx="396" cy="116" r="20"/>
+		</g>
+	</symbol>
+
+<symbol id="twitter" viewBox="0 0 24 24">
+		<g>
+		   <path d="m.473 19.595c2.222 1.41 4.808 2.155 7.478 2.155 3.91 0 7.493-1.502 10.09-4.229 2.485-2.61 3.852-6.117 3.784-9.676.942-.806 2.05-2.345 2.05-3.845 0-.575-.624-.94-1.13-.647-.885.52-1.692.656-2.522.423-1.695-1.652-4.218-2-6.344-.854-1.858 1-2.891 2.83-2.798 4.83-3.139-.383-6.039-1.957-8.061-4.403-.332-.399-.962-.352-1.226.1-.974 1.668-.964 3.601-.117 5.162-.403.071-.652.41-.652.777 0 1.569.706 3.011 1.843 3.995-.212.204-.282.507-.192.777.5 1.502 1.632 2.676 3.047 3.264-1.539.735-3.241.98-4.756.794-.784-.106-1.171.948-.494 1.377zm7.683-1.914c.561-.431.263-1.329-.441-1.344-1.24-.026-2.369-.637-3.072-1.598.339-.022.69-.074 1.024-.164.761-.206.725-1.304-.048-1.459-1.403-.282-2.504-1.304-2.917-2.62.377.093.761.145 1.144.152.759.004 1.046-.969.427-1.376-1.395-.919-1.99-2.542-1.596-4.068 2.436 2.468 5.741 3.955 9.237 4.123.501.031.877-.44.767-.917-.475-2.059.675-3.502 1.91-4.167 1.222-.66 3.184-.866 4.688.712.447.471 1.955.489 2.722.31-.344.648-.873 1.263-1.368 1.609-.211.148-.332.394-.319.651.161 3.285-1.063 6.551-3.358 8.96-2.312 2.427-5.509 3.764-9.004 3.764-1.39 0-2.753-.226-4.041-.662 1.54-.298 3.003-.95 4.245-1.906z"/>
+		</g>
+	</symbol>
+
+</svg>
+
+
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__logo">
+					<a href=""><img id="header__logo" src="assets/images/logo-1.png"></a>
+				</div>
+
+				<nav class="nav">
+					<a class="nav__link" href="#aboutId">О нас</a>
+					<a class="nav__link" href="#teamId">Наша команда</a>
+					<a class="nav__link" href="#priceId">Цены</a>
+					<a class="nav__link" href="#contactsId">Контакты</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+
+
+
+
+	<div class="intro">
+		<div class="container">
+			<div class="intro__inner">
+				<a href=""><img id="logo" src="assets/images/logo-1.png"></a>
+				<h1 class="intro__title">Твоё английское пространство</h1>
+				<h2 class="intro__subtitle">Начни учить английский сегодня, чтобы быть на шаг впереди уже завтра!</h2>
+				<a class="btn" id="btn--popup" href="#">Записаться</a>
+			</div>
+		</div>
+	</div><!-- /intro -->
+	
+	<div id="mypopup" class="popup">
+		<div id="bg"></div>
+		<div class="popup__content">
+				<h2 class="popup__title">Join up</h2>
+				<form class="app" action="">
+
+					<p>
+							
+						<input type="text" name="first_name" placeholder="Имя">
+					</p>
+
+					<p>
+							
+						<input class="line" type="text" name="last_name" placeholder="Фамилия">
+					</p>
+
+					<p>
+						
+						<input type="email" name="email" placeholder="Еmail">
+					</p>
+
+					<p>		
+						<input type="tel" name="phone" placeholder="Телефон">
+					</p>
+				
+					<p >
+						<a class="btn" href="https:\\youtube.com">
+								Зарегистрироваться
+						</a>
+					</p>
+					
+				</form>
+		</div>
+	</div>
+
+
+	<div class="about" id="aboutId">
+		<div class="container  container--about">
+			<div class="container">
+				<div class="about__inner">
+				    <h1 class="page__title">About Us</h1>
+
+				    <p class="about__text">	  Хотите легко и интересно освоить английский язык, потратив минимум времени и сил? Тогда добро пожаловать в школу английского языка <strong>SpacEng</strong>. Наши квалифицированные преподаватели приложат максимум усилий, чтобы сделать ваш английский совершенным.<br>Проходя курс обучения в школе ангшлийского языка <strong>SpacEng</strong> вы получите:<br></p>
+				    <ul>
+				    	<li>100% внимание преподавателя;</li>
+				    	<li>Современные методы обучения;</li>
+				    	<li>Индивидуальный подход;</li>
+				    	<li>Доступную стоимость обучения;</li>
+				    	<li>Профессионализм преподавателей.</li>
+				    </ul>
+				    <a class="book" href="assets/materials/GIU.pdf" download>Пример нашего учебника</a>
+				    
+				</div>
+			</div><!-- /container -->
+		
+		
+
+
+
+			<div class="statistics">
+				<div class="container">
+					<div class="stat">
+						<div class="stat__item">
+							<div class="stat__count">100+</div>
+							<div class="stat__text">успешно сданых экзаменов</div>
+						</div>
+						<div class="stat__item">
+							<div class="stat__count">2</div>
+							<div class="stat__text">открытые школы на выбор</div>
+						</div>
+						<div class="stat__item">
+							<div class="stat__count">25</div>
+							<div class="stat__text">лучших преподавателей харькова</div>
+						</div>
+						<div class="stat__item">
+							<div class="stat__count">8</div>
+							<div class="stat__text">лет работы для вас</div>
+						</div>
+
+					</div><!-- /stat -->
+
+				</div><!-- /container -->
+			</div> <!-- /statistics -->
+
+		</div><!-- /container  container--about -->
+	</div><!-- /about -->
+
+
+
+	<div class="team" id="teamId">
+		<div class="container">
+			<h2 class="page__title">Our team</h2>
+			<div class="team__inner">
+
+				<div class="team__item">
+					<img class="team__photo "src="assets/images/team/teacher-1.jpg" alt="">
+					<div class="team__name">Clara Smith</div>
+					<div class="team__prof">Основатель школы</div>
+					<div class="team__text"><p>Методисты школы строго проверяют уровень английского языка преподавателей, педагогические навыки и способность разговорить собеседника.</p></div>
+					<div class="social">
+						<a class="social__item" href="#">
+							<svg class="social__icon">
+								<use xlink:href="#facebook"></use>
+							</svg>
+						</a>
+						<a class="social__item" href="#">
+							<svg class="social__icon">
+								<use xlink:href="#instagram"></use>
+							</svg>
+						</a>
+						<a class="social__item" href="#">
+							<svg class="social__icon">
+								<use xlink:href="#twitter"></use>
+							</svg>
+						</a>
+					</div>
+				</div>	
+
+				<div class="team__item">
+					<img class="team__photo "src="assets/images/team/teacher-2.jpg" alt="">
+					<div class="team__name">Emily Williams</div>
+					<div class="team__prof">Главный Администратор</div>
+					<div class="team__text"><p>С нашими репетиторами постоянно занимаются эксперты в педагогике и англоговорящие учителя, чтобы повышать эффективность их уроков.</p></div>
+					<div class="social">
+						<a class="social__item" href="#">
+							<svg class="social__icon">
+								<use xlink:href="#facebook"></use>
+							</svg>
+						</a>
+						<a class="social__item" href="#">
+							<svg class="social__icon">
+								<use xlink:href="#instagram"></use>
+							</svg>
+						</a>
+						<a class="social__item" href="#">
+							<svg class="social__icon">
+								<use xlink:href="#twitter"></use>
+							</svg>
+						</a>
+					</div>
+				</div>	
+
+				<div class="team__item">
+					<img class="team__photo "src="assets/images/team/teacher-3.jpg" alt="">
+					<div class="team__name">Alice Brown</div>
+					<div class="team__prof">Заведующая школой Московского района</div>
+					<div class="team__text"><p>Все репетиторы по английскому языку имеют дипломы лучших языковых и педагогических вузов, сертификаты CELTA, DELTA.</p></div>
+					<div class="social">
+						<a class="social__item" href="#">
+							<svg class="social__icon">
+								<use xlink:href="#facebook"></use>
+							</svg>
+						</a>
+						<a class="social__item" href="#">
+							<svg class="social__icon">
+								<use xlink:href="#instagram"></use>
+							</svg>
+						</a>
+						<a class="social__item" href="#">
+							<svg class="social__icon">
+								<use xlink:href="#twitter"></use>
+							</svg>
+						</a>
+					</div>
+				</div>	
+
+				<div class="team__item">
+					<img class="team__photo "src="assets/images/team/teacher-4.jpg" alt="">
+					<div class="team__name">Grace Miller</div>
+					<div class="team__prof">Заведующая школой Киевского района</div>
+					<div class="team__text"><p>Мы регулярно приглашаем специалистов по инновационным направлениям в педагогике для обучения наших преподавателей.</p></div>
+					<div class="social">
+						<a class="social__item" href="#">
+							<svg class="social__icon">
+								<use xlink:href="#facebook"></use>
+							</svg>
+						</a>
+						<a class="social__item" href="#">
+							<svg class="social__icon">
+								<use xlink:href="#instagram"></use>
+							</svg>
+						</a>
+						<a class="social__item" href="#">
+							<svg class="social__icon">
+								<use xlink:href="#twitter"></use>
+							</svg>
+						</a>
+					</div>
+				</div>	
+
+			</div>
+		</div><!-- /container -->
+	</div><!-- /team -->
+
+
+
+
+
+	<div class="price" id="priceId">
+		<div class="container">
+			<h2 class="page__title">Price</h2>
+			<div class="price__inner">
+				<table class="price__table" border="1px" width="100%" cellpadding="5">
+					<tr>
+						<th colspan="2">Дети</th>
+						<th colspan="2">Взрослые</th>
+						<th colspan="2">Подготовка к экзаменам</th>
+					</tr>
+					<tr>
+						<td>Инд.</td>
+						<td>Груп.</td>
+						<td>Инд.</td>
+						<td>Груп.</td>
+						<td>Инд.</td>
+						<td>Груп.</td>
+						
+					</tr>
+					<tr>
+						<td>60 мин</td>
+						<td>50 мин</td>
+						<td>90 мин</td>
+						<td>80 мин</td>
+						<td>80 мин</td>
+						<td>60 мин</td>
+					</tr>
+					<tr>
+						<td>120 грн</td>
+						<td>180 грн</td>
+						<td>180 грн</td>
+						<td>250 грн</td>
+						<td>150 грн</td>
+						<td>200 грн</td>
+					</tr>
+					<tr>
+						<td>960 грн<p>/месяц</p></td>
+						<td>1440 грн<p>/месяц</p></td>
+						<td>1440 грн<p>/месяц</p></td>
+						<td>2000 грн<p>/месяц</p></td>
+						<td>1200 грн<p>/месяц</p></td>
+						<td>1600 грн<p>/месяц</p></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="application" id="joinUp">
+		<div class="container">
+			<div class="application__inner">
+				<div class="form">
+					<h2 class="app__title">Join up</h2>
+					<form class="app" action="">
+
+						<p>
+								
+							<input type="text" name="first_name" placeholder="Имя">
+						</p>
+
+						<p>
+								
+							<input class="line" type="text" name="last_name" placeholder="Фамилия">
+						</p>
+
+						<p>
+							
+							<input type="email" name="email" placeholder="Еmail">
+						</p>
+
+						<p>		
+							<input type="tel" name="phone" placeholder="Телефон">
+						</p>
+					
+						<p >
+							<a class="btn" href="https:\\youtube.com">
+									Зарегистрироваться
+							</a>
+						</p>
+						
+					</form>
+				</div>
+				<div class="join__photo">
+					<img class="logo__join" src="assets/images/logo.png">
+				</div>
+			</div><!--/application__inner -->
+		</div><!--/container -->
+	</div> <!--/application -->
+
+
+
+
+
+	<div class="contacts" id="contactsId">
+		<div class="container">
+			<h2 class="page__title">CONTACTS</h2>
+			<div class="contacts__inner">
+				
+				<div class="contacts__map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10255.266746831354!2d36.2284908!3d50.014791!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6daed05394f03251!2z0KXQsNGA0LrRltCy0YHRjNC60LjQuSDQvdCw0YbRltC-0L3QsNC70YzQvdC40Lkg0YPQvdGW0LLQtdGA0YHQuNGC0LXRgiDRgNCw0LTRltC-0LXQu9C10LrRgtGA0L7QvdGW0LrQuCAo0KXQndCj0KDQlSwgTlVSRSk!5e0!3m2!1suk!2sua!4v1601921883425!5m2!1suk!2sua" width="100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
+				<div class="contacts__info">
+					<h3>Adress:</h3>
+					<p>проспект Науки, 14, Харків, Харківська область, 61000</p>
+					<h3>Telephone:</h3>
+					<p>+380xx-xxx-xx-xx</p>
+					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+</body>
+
+<footer class="footer">
+	<div class="container">
+		<div class="social  social--footer">
+			<a class="social__item  social__item--footer" href="#">
+				<svg class="social__icon  social__icon--footer">
+					<use xlink:href="#facebook"></use>
+				</svg>
+			</a>
+			<a class="social__item  social__item--footer" href="#">
+				<svg class="social__icon  social__icon--footer">
+					<use xlink:href="#instagram"></use>
+				</svg>
+			</a>
+			<a class="social__item  social__item--footer" href="#">
+				<svg class="social__icon  social__icon--footer">
+					<use xlink:href="#twitter"></use>
+				</svg>
+			</a>
+		</div>
+	</div>
+</footer>
+
+</html>
